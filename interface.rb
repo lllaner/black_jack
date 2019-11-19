@@ -12,13 +12,12 @@ class Interface
   end
 
   def new_game
-    
     @game.new_game
     show_cards(@game.user)
-    show_cards(@game.dealer, falce)
+    show_cards(@game.dealer, false)
     step
   end
- 
+
   def step
     puts menu_option
     case gets.chomp.to_i

@@ -16,7 +16,7 @@ class Player
     def calculate_points
       @points = 0
       @cards.each do |card|
-        if card.suit == 'T'
+        if card.ace?
           card.index = 1 if @points + card.index > 21
         end
         @points += card.index

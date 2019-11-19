@@ -1,5 +1,4 @@
 class BlackJack
-  
   attr_accessor :user, :dealer, :bank, :deck
   def initialize(name)
     @user = User.new(name, 100)

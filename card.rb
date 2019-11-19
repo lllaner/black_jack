@@ -1,8 +1,16 @@
 class Card
   attr_accessor :card, :suit, :index
-def initialize(card,suit,index)
-  @card,@suit,@index = card,suit,index
-end
+  SUITS = ['+', '<3', '^', '<>'].freeze
+
+  def initialize(card, suit, index)
+    @card = card
+    @suit = suit
+    @index = index
+  end
+
+  def ace?
+    @card == 'T'
+  end
 
   def name
     @card.to_s + suit
