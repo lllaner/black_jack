@@ -12,7 +12,6 @@ class BlackJack
   end
 
   def result
-
     if @user.points < 22 && @dealer.points < 22
       player_win(@dealer) if @dealer.points > @user.points
       player_win(@user) if @user.points > @dealer.points
@@ -34,7 +33,7 @@ class BlackJack
   def draw
     @user.balance += bank.balance / 2
     @dealer.balance += bank.balance / 2
-    "Draw"
+    'Draw'
   end
 
   def new_game
@@ -59,8 +58,4 @@ class BlackJack
     @user.balance -= 10
     @dealer.balance -= 10
   end
-
-  
 end
-
-

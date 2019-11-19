@@ -45,7 +45,7 @@ class Interface
   end
 
   def introduction
-    puts "Please enter your name"
+    puts 'Please enter your name'
     gets.chomp
   end
 
@@ -60,8 +60,8 @@ class Interface
 
   def after_result_menu
     [
-       "1 - Продолжить игру",
-       "2 - Закончить игру"
+      '1 - Продолжить игру',
+      '2 - Закончить игру'
     ]
   end
 
