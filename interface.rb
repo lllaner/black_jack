@@ -5,7 +5,7 @@ class Interface
 
   def show_cards(player, show = true)
     if show
-      puts "#{player.name},#{player.balance}, cards: #{player.cards.map(&:name).join(', ')}, total points: #{player.points}"
+      puts "#{player.name}, cards: #{player.cards.map(&:name).join(', ')}, total points: #{player.points}"
     else
       puts "#{player.name}, cards: #{player.cards.size}, total points: secret"
     end
@@ -15,7 +15,7 @@ class Interface
     
     @game.new_game
     show_cards(@game.user)
-    show_cards(@game.dealer, true)
+    show_cards(@game.dealer, falce)
     step
   end
  
